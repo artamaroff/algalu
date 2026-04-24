@@ -9,34 +9,25 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  min-height: 100%;
   background: #000;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 .hero {
   width: 100vw;
-  height: 100vh;
-  background-image: url("Landing.jpg");
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
+  background-image: url("landing.jpg");
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
-}
-
-.contact {
-  position: fixed;
-  top: 32px;
-  right: 46px;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: .2px;
+  background-color: #000;
 }
 </style>
 </head>
 
 <body>
   <div class="hero"></div>
-  <div class="contact">✉ algalu@algalu.com</div>
 </body>
 </html>
