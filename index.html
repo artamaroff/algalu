@@ -6,45 +6,31 @@
 <title>Algalu Holding</title>
 
 <style>
-body {
+html, body {
     margin: 0;
+    padding: 0;
     background: #000;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    position: relative;
-    text-align: center;
-}
-
-/* 👇 IMAGEN AJUSTADA (sin zoom agresivo) */
-img {
     width: 100%;
-    height: auto;
-    max-height: 100vh;
-    display: block;
-    margin: 0 auto;
+    height: 100%;
 }
 
-/* 👇 EMAIL ARRIBA DERECHA */
-.contact {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    display: block;
 }
 </style>
-
 </head>
 
 <body>
-
-<div class="container">
     <img src="Landing.png" alt="Algalu Holding">
-    <div class="contact">algalu@algalu.com</div>
-</div>
-
 </body>
 </html>
