@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,30 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: black;
+  height: 100%;
 }
 
-img {
-  width: 100vw;
-  height: auto;
-  display: block;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('landing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+    background-size: contain; /* evita cortes en móvil */
+  }
 }
 </style>
 </head>
 
 <body>
-  <img src="landing.jpg" alt="Algalu Holding">
+<div class="container"></div>
 </body>
 </html>
