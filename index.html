@@ -9,18 +9,27 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #000;
+  height: 100%;
+  background: black;
 }
 
-img {
+.hero {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100vh;
+  background: url("landing.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-aspect-ratio: 16/9) {
+  .hero {
+    background-size: contain;
+  }
 }
 </style>
 </head>
 
 <body>
-  <img src="landing.jpg" alt="Algalu Holding">
+  <div class="hero"></div>
 </body>
 </html>
