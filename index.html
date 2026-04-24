@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Algalu Holding</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algalu Holding</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: black;
-    }
+<style>
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+}
 
-    img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      display: block;
-    }
+.container {
+    position: relative;
+    text-align: center;
+}
 
-    .contact {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-      color: white;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
+/* 👇 IMAGEN AJUSTADA (sin zoom agresivo) */
+img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 👇 EMAIL ARRIBA DERECHA */
+.contact {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+</style>
+
 </head>
 
 <body>
 
-  <div class="contact">
-    algalu@algalu.com
-  </div>
-
-  <img src="./Landing.png" alt="Algalu Landing">
+<div class="container">
+    <img src="Landing.png" alt="Algalu Holding">
+    <div class="contact">algalu@algalu.com</div>
+</div>
 
 </body>
 </html>
