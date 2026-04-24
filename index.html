@@ -7,29 +7,36 @@
 
 <style>
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100%;
-    background: #000;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  height: 100%;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("Landing_final_clean.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-img {
-    width: 100%;
-    max-width: 1600px;
-    height: auto;
-    display: block;
+.contact {
+  position: fixed;
+  top: 32px;
+  right: 46px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: .2px;
 }
 </style>
 </head>
 
 <body>
-    <img src="Landing.jpg" alt="Algalu Holding">
+  <div class="hero"></div>
+  <div class="contact">✉ algalu@algalu.com</div>
 </body>
 </html>
