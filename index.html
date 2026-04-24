@@ -11,6 +11,7 @@ html, body {
   padding: 0;
   background: black;
   height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -18,21 +19,52 @@ html, body {
   height: 100vh;
   background-image: url('landing.jpg');
   background-size: cover;
-  background-position: center 60%;
+  background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+/* CONTACTO ARRIBA DERECHA */
+.contact {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 14px;
+  text-align: right;
+}
+
+.contact span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
 }
 
 /* MÓVIL */
 @media (max-width: 768px) {
   .container {
-    height: 100vh;
-    background-size: contain; /* evita cortes en móvil */
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .contact {
+    top: 10px;
+    right: 15px;
+    font-size: 12px;
   }
 }
 </style>
 </head>
 
 <body>
-<div class="container"></div>
+
+<div class="container">
+  <div class="contact">
+    <span>CONTACT US</span>
+    algalu@algalu.com
+  </div>
+</div>
+
 </body>
+</html>
 </html>
