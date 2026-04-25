@@ -1,37 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Algalu Holding</title>
+  <meta charset="UTF-8">
+  <title>Algalu Holding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  background: black;
-  height: 100%;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  background-image: url('landing.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+    html, body {
+      height: 100%;
+      background: #000;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
 
-/* MÓVIL */
-@media (max-width: 768px) {
-  .container {
-    background-size: contain;
-    background-position: center top;
-  }
-}
-</style>
+    /* CONTENEDOR PRINCIPAL */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: #000;
+    }
+
+    /* IMAGEN PERFECTAMENTE AJUSTADA */
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* CLAVE: no corta nada */
+      background: #000;
+    }
+
+    /* EMAIL ARRIBA DERECHA */
+    .top-right {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .top-right img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .top-right {
+        top: 20px;
+        right: 20px;
+        font-size: 12px;
+      }
+
+      .top-right img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  </style>
 </head>
 
+<body>
+
+  <!-- FORZAR WWW -->
+  <script>
+    if (location.hostname === "algalu.com") {
+      location.replace("https://www.algalu.com");
+    }
+  </script>
+
+  <div class="hero">
+    
+    <!-- IMAGEN -->
+    <img src="landing.jpg" alt="Algalu Holding">
+
+    <!-- EMAIL -->
+    <div class="top-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="mail">
+      <span>algalu@algalu.com</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
 <body>
 <div class="container"></div>
 </body>
