@@ -1,103 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Algalu Holding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algalu Holding</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  width: 100%;
+  min-height: 100%;
+}
 
-    html, body {
-      height: 100%;
-      background: #000;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-    }
+body {
+  overflow-x: hidden;
+}
 
-    /* CONTENEDOR PRINCIPAL */
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      background: #000;
-    }
-
-    /* IMAGEN PERFECTAMENTE AJUSTADA */
-    .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* CLAVE: no corta nada */
-      background: #000;
-    }
-
-    /* EMAIL ARRIBA DERECHA */
-    .top-right {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #fff;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-    }
-
-    .top-right img {
-      width: 20px;
-      height: 20px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .top-right {
-        top: 20px;
-        right: 20px;
-        font-size: 12px;
-      }
-
-      .top-right img {
-        width: 16px;
-        height: 16px;
-      }
-    }
-  </style>
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
 </head>
 
 <body>
-
-  <!-- FORZAR WWW -->
-  <script>
-    if (location.hostname === "algalu.com") {
-      location.replace("https://www.algalu.com");
-    }
-  </script>
-
-  <div class="hero">
-    
-    <!-- IMAGEN -->
-    <img src="landing.jpg" alt="Algalu Holding">
-
-    <!-- EMAIL -->
-    <div class="top-right">
-      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="mail">
-      <span>algalu@algalu.com</span>
-    </div>
-
-  </div>
-
-</body>
-</html>
-<body>
-<div class="container"></div>
+  <img src="./landing.jpg" alt="Algalu Holding">
 </body>
 </html>
